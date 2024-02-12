@@ -57,11 +57,18 @@
 
 
     </LinearLayout>
-
-    <Space
+    <FrameLayout
+        android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_weight="1"/>
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+      />
+
+<!--    <Space-->
+<!--        android:id="@+id/space_placeholder"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_weight="1"/>-->
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
