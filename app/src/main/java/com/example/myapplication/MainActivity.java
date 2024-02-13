@@ -31,10 +31,19 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button loginButton = layout.loginButton;
+
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Home.class);
+                startActivity(intent);
+            }
+        });
+        Button signUp = layout.signup;
+        signUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this , SignUp.class);
                 startActivity(intent);
             }
         });
